@@ -275,14 +275,14 @@ send_MDmessage($chat_id, "***USD = $inbtc \nBTC = $outvalue \nValue checked by @
 
      ///Send Message (Global)
     function send_message($chat_id, $message){
-        $apiToken =  "1587500396:AAGZBFDtpCg5-qdWTiMvnsfwge2ons6MUyU";
+        $apiToken =  "1589653664:AAFB8vOxt4s5Ic7e2DrC8iS-bcCq2HtHEZs";
         $text = urlencode($message);
         file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?chat_id=$chat_id&text=$text");
     }
     
 //Send Messages with Markdown (Global)
       function send_MDmessage($chat_id, $message){
-       $apiToken =  "1587500396:AAGZBFDtpCg5-qdWTiMvnsfwge2ons6MUyU";
+       $apiToken =  "1589653664:AAFB8vOxt4s5Ic7e2DrC8iS-bcCq2HtHEZs";
         $text = urlencode($message);
         file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?chat_id=$chat_id&text=$text&parse_mode=Markdown");
     }
@@ -290,13 +290,13 @@ send_MDmessage($chat_id, "***USD = $inbtc \nBTC = $outvalue \nValue checked by @
 
 ///Send Message to Channel
       function send_Cmessage($channel_id, $message){
-       $apiToken =  "1587500396:AAGZBFDtpCg5-qdWTiMvnsfwge2ons6MUyU";
+       $apiToken =  "1589653664:AAFB8vOxt4s5Ic7e2DrC8iS-bcCq2HtHEZs";
         $text = urlencode($message);
         file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?chat_id=$channel_id&text=$text");
     }
 
  function sendDice($chat_id, $message){
-       $apiToken =  "1587500396:AAGZBFDtpCg5-qdWTiMvnsfwge2ons6MUyU";
+       $apiToken =  "1589653664:AAFB8vOxt4s5Ic7e2DrC8iS-bcCq2HtHEZs";
         file_get_contents("https://api.telegram.org/bot$apiToken/sendDice?chat_id=$chat_id&emoji=$message");
     }
 
