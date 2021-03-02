@@ -22,7 +22,6 @@ $channel_id = "-100xxxxxxxxxx";
           /search <input> (Google search)
           \n/syt <query> (Youtube Search)
           \n/dict <word> (Dicitonary)
-       
           \n/weather <name of your city> (Current weather Status)
           \n/dice (random 1-6)
           \n/date (today's date)
